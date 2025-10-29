@@ -15,6 +15,7 @@ price = st.write(data["Close"].iloc[-1])
 plt.plot(data.index, data["Close"])
 plt.rcParams['font.family'] = 'Malgun Gothic'
 plt.title(f"{symbol} 종가({period}, {interval})")
-plt.xlabel("기간")
-plt.ylabel("가격")
+plt.xlabel("DATE")
+plt.ylabel("PRICE")
 st.pyplot(plt)
+
